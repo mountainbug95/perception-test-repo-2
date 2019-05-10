@@ -1,10 +1,15 @@
 uploadDir: "images"
 sourceMapping:
   - source:
-      value: false
+      value: true
     target:
       file: "content/posts/*.md"
       fieldPath: "dp"
+  - source:
+      value: true
+    target:
+      file: "content/posts/*.md"
+      fieldPath: "display_thumbnail"
 models:
   config:
     type: config
