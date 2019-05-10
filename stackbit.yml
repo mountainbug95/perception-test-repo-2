@@ -114,6 +114,7 @@ models:
               name: title
               label: Icon Title
               required: true
+              default: "SocialIcon"
               description: Used to identify the icon . in the CMS (not used in the template)
             - type: string
               name: icon
