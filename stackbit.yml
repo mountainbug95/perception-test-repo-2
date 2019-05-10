@@ -287,6 +287,7 @@ models:
         name: dp
         label: Display Post
         default: false
+        required: true
         description: Displays the post in the posts section
   basic:
     type: page
