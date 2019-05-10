@@ -22,6 +22,7 @@ params:
       blurb:
         enabled: true
         displayBlurbImg: true
+        img: ""
         description:
           heading: Anna Goldfarb
           subheading: writer & Journalist

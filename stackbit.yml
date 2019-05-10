@@ -13,8 +13,18 @@ sourceMapping:
   - source:
       fieldPath: "author.email"
     target:
+      file: "data/author.json"
+      fieldPath: "email"
+  - source:
+      fieldPath: "author.email"
+    target:
       file: "config.yml"
       fieldPath: "params.footer.bottom.blurb.subheading"
+  - source:
+      fieldPath: "author.avatar"
+    target:
+      file: "data/author.json"
+      fieldPath: "avatar"
   - source:
       fieldPath: "author.avatar"
     target:
