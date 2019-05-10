@@ -1,6 +1,26 @@
 uploadDir: "images"
 sourceMapping:
   - source:
+      fieldPath: "author.name"
+    target:
+      file: "data/author.json"
+      fieldPath: "name"
+  - source:
+      fieldPath: "author.name"
+    target:
+      file: "config.yml"
+      fieldPath: "params.footer.bottom.blurb.heading"
+  - source:
+      fieldPath: "author.email"
+    target:
+      file: "config.yml"
+      fieldPath: "params.footer.bottom.blurb.subheading"
+  - source:
+      fieldPath: "author.avatar"
+    target:
+      file: "config.yml"
+      fieldPath: "params.footer.bottom.blurb.img"
+  - source:
       value: true
     target:
       file: "content/posts/*.md"
