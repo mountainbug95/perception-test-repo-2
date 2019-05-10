@@ -2,7 +2,7 @@
 <div  class="posts">
     <ul class="posts-list">
         {% for post in include_dict.site.root.folders.posts.pages | sort(true, true, "date") %}
-            {% if post.dp  === true %}
+            {% if post.dp == true and dp != null %}
                 {% if loop.first %}
                     <li class="first-post">
                         <div class="first-post-content{% if post.thumb_img_path and post.display_thumbnail %} has-img{% endif %}">

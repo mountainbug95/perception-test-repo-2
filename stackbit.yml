@@ -1,4 +1,10 @@
 uploadDir: "images"
+sourceMapping:
+  - source:
+      fieldPath: "post.dp"
+    target:
+      file: "content/posts/*"
+      fieldPath: "dp"
 models:
   config:
     type: config
