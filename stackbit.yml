@@ -1,9 +1,9 @@
 uploadDir: "images"
 sourceMapping:
   - source:
-      fieldPath: "post.dp"
+      value: true
     target:
-      file: "content/posts/*"
+      file: "content/posts/*.md"
       fieldPath: "dp"
 models:
   config:
