@@ -1,0 +1,38 @@
+<!-- HERO -->
+{% if page.hero.displayHeaderImg %}
+    <hr class="hr-home" />
+{% endif %}
+<div class="hero">
+    {% if page.hero.displayHeaderImg %}
+        {% if page.hero.img %}
+            <div class="hero-img">
+                <img src="{{ page.hero.img | relative_url }}" alt="" />
+            </div>
+        {% elif site.data.author.avatar %}
+            <div class="hero-img">
+                <img src="{{ site.data.author.avatar | relative_url }}" alt="" />
+            </div>
+        {% endif %}
+    {% endif %}
+
+    {% if page.hero.description %}
+        <div class="hero-description">
+            {{ page.hero.description | markdownify }}
+        </div>
+    {% endif %}
+
+    {% if page.hero.subdescription.enabled %}
+        <div class="hero-subdescription">
+            {% if page.hero.subdescription.heading %}
+                <h2>{{ page.hero.subdescription.heading }}</h2>
+            {% elif site.data.author.name %}
+                <h2>{{ site.data.author.name}}</h2>
+            {% endif %}
+            {% if page.hero.subdescription.subheading %}
+                <h3>{{ page.hero.subdescription.subheading }}</h3>
+            {% elif site.data.author.email %}
+                <h3>{{ site.data.author.email }}</h3>
+            {% endif %}
+        </div>
+    {% endif %}
+</div>

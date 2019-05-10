@@ -1,0 +1,23 @@
+{% extends "body.html" %}
+
+{% block content %}
+
+    {% include "hero_generic.html" %}
+
+    <!--CONTENT-->
+    <div class="content">
+        {{ page.content }}
+
+        {% if page.display_bottom_tags %}
+            <ul class="bottom-tags">
+                {% for tag in page.tagsList %}
+                    <li class="tag">{{ tag.name }}</li>
+                    {% if not loop.last %}
+                        <li class="delim"></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+
+{% endblock %}

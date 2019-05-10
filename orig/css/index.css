@@ -1,0 +1,165 @@
+@import url("main.css");
+
+.posts{
+    display: flex;
+    margin-top: 90px;
+    margin-bottom: 120px;
+}
+
+.posts-list{
+    max-width: 100%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: streatch;
+    align-items: streatch;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.post-date{
+    font-family: 'chivo-regular';
+    font-size: 13px;
+    color: #aaaaaa;
+    line-height: 30px;
+    border-bottom: 1px solid;
+}
+
+.first-post{
+    box-sizing: border-box;
+    overflow: hidden;
+    flex: 1 0 50%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.first-post-content{
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+.first-img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.post{
+    box-sizing: border-box;
+    display: inline-block;
+    flex: 1 0 25%;
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.post-header{
+    box-sizing: border-box;
+    overflow: hidden;
+    display: block;
+    height: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.has-img{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.post-heading{
+    font-family: 'robotoslab-bold';
+    font-size: 22px;
+    max-width: 60%;
+}
+
+.first-post-heading{
+    font-family: 'robotoslab-bold';
+    font-size: 26px;
+    max-width: 40%;
+}
+
+.post-img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.excerpt{
+    font-family: 'chivo-regukar';
+    font-size: 14px;
+    line-height: 30px;
+    padding: 10px;
+    margin-bottom: 70px;
+}
+
+.excerpt a{
+    font-family: 'chivo-reguklar';
+    text-decoration: none;
+    color: #5db9ff;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 1500px){
+    .posts{
+        display: block;
+    }
+
+    .post-header{
+        display: inline-block;
+        height: auto;
+    }
+
+    .first-post-content{
+        display: inline-block;
+        height: auto;
+    }
+    
+    .first-post{
+        display: inline-block;
+        max-height: auto;
+    }
+    
+    .post{
+        display: inline-block;
+        max-height: auto;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .posts-list{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .first-post{
+        min-width: 100%;
+        display: block;
+    }
+
+    .post{
+        min-width: 100%;
+        display: block;
+    }
+}

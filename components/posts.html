@@ -1,0 +1,38 @@
+<!-- POSTS -->
+<div  class="posts">
+    <ul class="posts-list">
+        {% for post in include_dict.site.root.folders.posts.pages | sort(true, true, "date") %}
+            {% if post.dp %}
+                {% if loop.first %}
+                    <li class="first-post">
+                        <div class="first-post-content{% if post.thumb_img_path and post.display_thumbnail %} has-img{% endif %}">
+                            <h3 class="post-date">{{ post.date | date_format("%b %d %Y") }}</h3>
+                            {% if post.thumb_img_path and post.display_thumbnail %}
+                                <img class="first-img" src="{{ post.thumb_img_path | relative_url }}" alt="" />
+                            {% endif %}
+                            <a href="{{ post.url | relative_url }}"><h1 class="first-post-heading{% if post.thumb_img_path and post.display_thumbnail %} inversed{% endif %}">{{ post.title }}</h1></a>
+                            <div class="excerpt{% if post.thumb_img_path and post.display_thumbnail %} inversed{% endif %}">
+                                {{ post.excerpt | nl2br| safe }}<span><a href="{{ post.url | relative_url }}">Read more →</a></span>
+                            </div>
+                        </div>
+                    </li>
+                {% else %}
+                    <li class="post">
+                        <div class="post-header{% if  post.thumb_img_path and post.display_thumbnail %} has-img{% endif %}">
+                            <h3 class="post-date">{{ post.date | date_format("%b %d %Y") }}</h3>
+                            {% if  post.thumb_img_path and post.display_thumbnail %}
+                                <img class="post-img" src="{{ post.thumb_img_path | relative_url }}" alt="" />
+                            {% endif %}
+                            <a href="{{ post.url | relative_url }}"><h1 class="post-heading{% if post.thumb_img_path and post.display_thumbnail %} inversed{% endif %}">{{ post.title }}</h1></a>
+                        </div>
+                        {% if post.excerpt %}
+                            <div class="excerpt">
+                                {{ post.excerpt | nl2br | safe }}<span><a href="{{ post.url | relative_url }}">Read more →</a></span>
+                            </div>
+                        {% endif %}
+                    </li>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+    </ul>
+</div>

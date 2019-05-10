@@ -1,0 +1,10 @@
+enabled: true
+status: enabled
+title: Perception
+description: a medium theme
+weight: 8
+author: Stackbit
+authorURL: https://staxkbit.com
+images:
+  small: ''
+  large: ''

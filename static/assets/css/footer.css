@@ -1,0 +1,107 @@
+@import url("main.css");
+
+.footer{
+
+}
+
+.social{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin-bottom: 64px;
+}
+
+.social li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: #222222;
+}
+
+.social li i{
+    color: white;
+}
+
+.bottom{
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.blurb{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #222222;
+}
+
+.blurb-img{
+    width: 7%;
+    height: 7%;
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 100%;
+    margin: 60px;
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+}
+
+.blurb-content{
+    font-family: 'chivo-regular';
+    max-width: 45%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    color: #888888;
+    line-height: 30px;
+}
+
+.blurb-content h2{
+    margin-top: 0;
+    line-height: 20px;
+}
+
+.blurb-content h3{
+    font-family: 'chivo-regular';
+    color: #888888;
+    line-height: 20px;
+}
+
+.copyright{
+    font-family: 'chivo-regular';
+    display: block;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    font-size: 14px;
+    color: #aeaeae;
+}
+
+@media screen and (max-width: 800px){
+    .social{
+        justify-content: center;
+        padding: 0;
+    }
+
+    .blurb{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .blurb-img{
+        width: 50%;
+        height: 50%;
+        margin-bottom: 0;
+    }
+
+    .blurb-content{
+        margin-top: 15px;
+    }
+}

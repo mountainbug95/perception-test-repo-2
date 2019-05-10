@@ -1,0 +1,36 @@
+baseurl: "/"
+title: "My Perception"
+main_js: "assets/js/main.js"
+params:
+  footer:
+    social:
+      enabled: true
+      social_methods:
+        - title: Twitter
+          icon: "fab fa-twitter"
+          link: "#"
+        - title: Facebook
+          icon: "fab fa-facebook-f"
+          link: "#"
+        - title: Comment
+          icon: "fas fa-comment"
+          link: "#"
+        - title: Bookmark
+          icon: "fas fa-bookmark"
+          link: "#"
+    bottom:
+      blurb:
+        enabled: true
+        displayBlurbImg: true
+        img: "images/person.svg"
+        description:
+          heading: Anna Goldfarb
+          subheading: writer & Journalist
+          content: |-
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      copyright:
+        enabled: true
+        text: "&copy; Perception. All rights reserved. Lorem ipsum dolor sit amet."
+templates:
+  title: "{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}"
+  body_class: "body-content"

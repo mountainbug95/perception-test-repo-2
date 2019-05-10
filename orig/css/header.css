@@ -1,0 +1,36 @@
+@import url("main.css");
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.nav-logo h1{
+    font-family: 'chivo-bold';
+    font-size: 24px
+}
+
+.nav-items{
+    list-style: none;
+}
+
+.nav-items li{
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.nav-items a{
+    display: inline-block;
+    text-decoration: none;
+    font font-family: 'chivo-regular';
+    color: #222222;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 800px){
+    .nav-logo h1{
+        font-size: 16px;
+    }
+}

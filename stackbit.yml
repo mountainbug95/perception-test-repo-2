@@ -1,0 +1,368 @@
+uploadDir: "images"
+models:
+  config:
+    type: config
+    label: Config
+    hideContent: true
+    singleInstance: true
+    fields:
+      - type: object
+        name: footer
+        label: Footer Configuration
+        fields:
+          - type: object
+            name: social
+            label: Social Section
+            description: The social media icons displayed in the site footer
+            fields:
+              - type: boolean
+                name: enabled
+                label: Enabled
+                default: false
+                description: Displays the social section in the site footer
+              - type: list
+                name: social_methods
+                label: Social Icons
+                description: A list of social media icons
+                items:
+                  type: object
+                  labelField: title
+                  fields:
+                    - type: string
+                      name: title
+                      label: Icon Title
+                      required: true
+                      description: Used to identify the icon . in the CMS (not used in the template)
+                    - type: string
+                      name: icon
+                      label: Font Awesome Icon
+                      required: true
+                      description: "Any Font Awesome icon - 'fab fa-twitter', 'fas fa-comment'..."
+                    - type: string
+                      name: link
+                      label: Icon Link
+                      widget: url
+          - type: object
+            name: bottom
+            label: Footer Bottom
+            description: The bottom part of the site footer
+            fields:
+              - type: object
+                name: blurb
+                label: Blurb Section
+                description: The Author blurb displayed in the bottom part of the footer
+                fields:
+                  - type: boolean
+                    name: enabled
+                    label: Enabled
+                    default: false
+                    description: Displays the blurb section
+                  - type: boolean
+                    name: displayBlurbImg
+                    label: Display Blurb Image
+                    default: false
+                    description: Displays the blurb image
+                  - type: image
+                    name: img
+                    label: Blurb Image
+                    description: The image displayed next to . the blurb content
+                  - type: object
+                    name: description
+                    label: Blurb Content
+                    description: The content displayed in the blurb
+                    fields:
+                      - type: string
+                        name: heading
+                        label: Blurb Heading
+                        description: The bold text displayed at the top . of the blurb
+                      - type: string
+                        name: subheading
+                        label: Blurb Subheading
+                        description: The smaller text displayed below the blurb heading
+                      - type: markdown
+                        name: content
+                        label: Blurb Content
+                        description: The content displayed below the blurb subheading
+              - type: object
+                name: copyright
+                label: Copyright
+                description: The copyright displayed at the bottom of the site footer
+                fields:
+                  - type: boolean
+                    name: enabled
+                    label: Enabled
+                    default: false
+                    description: Displays the copyright section at the bottomof the page footer.
+                  - type: string
+                    name: text
+                    label: Copyright Text
+                    description: The text displayed in the footer copyright
+  social:
+    type: data
+    file: social.json
+    label: Social Links
+    fields:
+      - type: list
+        name: links
+        label: Social Icons
+        description: A list of social icons to be displayed in the site footer
+        items:
+          type: object
+          labelField: title
+          fields:
+            - type: string
+              name: title
+              label: Icon Title
+              required: true
+              description: Used to identify the icon . in the CMS (not used in the template)
+            - type: string
+              name: icon
+              label: Font Awesome Icon
+              required: true
+              description: "Any Font Awesome icon - 'fab fa-twitter', 'fas fa-comment'..."
+            - type: string
+              name: url
+              label: Icon Link
+              widget: url
+  author:
+    type: data
+    file: author.json
+    label: Author
+    fields:
+      - type: string
+        name: name
+        label: Name
+      - type: string
+        name: email
+        label: Email
+      - type: image
+        name: avatar
+        label: Avatar
+  home:
+    type: page
+    label: Home
+    template: home
+    file: index.md
+    hideContent: true
+    singleInstance: true
+    fields:
+      - type: string
+        name: title
+        label: Page Title
+        required: true
+      - type: object
+        name: hero
+        label: Hero
+        description: The hero displayed at the top of the page
+        fields:
+          - type: boolean
+            name: displayHeaderImg
+            label: Display Hero Image
+            default: false
+            description: displays the hero image
+          - type: image
+            name: img
+            label: Hero Image
+            description: The image displayed at the top of the hero
+          - type: markdown
+            name: description
+            label: Hero Description
+            description: The text displayed below thew hero image
+          - type: object
+            name: subdescription
+            label: Hero Subdescription
+            description: The subtitles displayed below the hero description
+            fields:
+              - type: boolean
+                name: enabled
+                label: Enabled
+                default: false
+                description: Displays the header subdescription
+              - type: string
+                name: heading
+                label: Subdescription Heading
+                description: The bold first line of text displayed in the hero subdescription
+              - type: string
+                name: subheading
+                label: Subdescription Subheading
+                description: The text displayed below the subdescription heading
+      - type: list
+        name: sections
+        label: Sections
+        description: Home Sections
+        items:
+          type: reference
+          labelField: title
+          models: [posts]
+  page:
+    type: page
+    label: Page
+    template: page
+    exclude: posts/**
+    fields:
+      - type: string
+        name: title
+        label: Page Title
+        required: true
+      - type: string
+        name: subtitle
+        label: Page Subtitle
+        description: The text displayed below the page title in the hero
+      - type: genericHero
+        name: hero
+        label: Page Hero
+        description: The hero displayed at the top of the page
+      - type: boolean
+        name: display_bottom_tags
+        label: Display Bottom Tags
+        default: false
+        description: Displays the page tags below the page content
+      - type: list
+        name: tagsList
+        label: Tags
+        description: A liost of tags associated with the page
+        items:
+          type: object
+          labelField: name
+          fields:
+            - type: string
+              name: name
+              label: Tag Name
+              required: true
+  post:
+    type: page
+    label: Post
+    template: post
+    folder: posts
+    fields:
+      - type: string
+        name: title
+        label: Post Title
+        required: true
+      - type: string
+        name: subtitle
+        label: Post Subtitle
+        description: The text displayed below the post title in the hero
+      - type: boolean
+        name: display_thumbnail
+        label: Display Thumbnail
+        default: true
+        description: Displays the thumbnail in the home posts section
+      - type: image
+        name: thumb_img_path
+        label: Thumbnail Image
+        description: The image displayed in the post thumbnail
+      - type: date
+        name: date
+        label: post date
+        required: true
+        description: The date the post was created
+      - type: text
+        name: excerpt
+        label: Post Excerpt
+        description: The excerpt displayed in the post thumbnail
+      - type: genericHero
+        name: hero
+        label: Post Hero
+        description: The hero displayed at the top of the post
+      - type: boolean
+        name: display_bottom_tags
+        label: Display Bottom Tags
+        default: false
+        description: Displays the post tags below the page content
+      - type: list
+        name: tagsList
+        label: Tags
+        description: A liost of tags associated with the post
+        items:
+          type: object
+          labelField: name
+          fields:
+            - type: string
+              name: name
+              label: Tag Name
+              required: true
+      - type: boolean
+        name: dp
+        label: Display Post
+        default: false
+        description: Displays the post in the posts section
+  basic:
+    type: page
+    label: Basic Page
+    file: about.md
+    singleInstance: true
+    template: basic
+    fields:
+      - type: string
+        name: title
+        label: Page Title
+        required: true
+      - type: genericHero
+        name: hero
+        label: Page Hero
+        description: The hero displayed at the top of the post
+  contact:
+    type: page
+    label: Contact Page
+    template: contact
+    file: contact.md
+    singleInstance: true
+    fields:
+      - type: string
+        name: title
+        label: Page Title
+        required: true
+      - type: genericHero
+        name: hero
+        label: Page Hero
+        description: The hero displayed at the top of the post
+  genericHero:
+    type: object
+    label: Generic Hero
+    fields:
+      - type: boolean
+        name: display_date
+        label: Display Date
+        default: false
+        description: Displays the date in the page hero
+      - type: boolean
+        name: displayHeaderImg
+        label: Display Hero Image
+        default: false
+        description: displays the hero image
+      - type: image
+        name: img
+        label: Hero Image
+        description: The image displayed at the top of the page hero
+      - type: boolean
+        name: display_tags
+        label: Display Tags
+        default: false
+        description: Displays the page tags at the bottom of the hero
+      - type: object
+        name: background_img
+        label: Background Image
+        description: The image displayed as the background opf the page hero
+        fields:
+          - type: boolean
+            name: display
+            label: Display Image
+            description: Displays the hero background image
+          - type: image
+            name: path
+            label: Image
+  posts:
+   type: object
+   label: Posts
+   fields:
+     - type: string
+       name: title
+       label: Section Title
+       required: true
+     - type: string
+       name: component
+       label: Component
+       required: true
+       hidden: true
+       const: posts.html

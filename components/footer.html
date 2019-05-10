@@ -1,0 +1,51 @@
+<!-- FOOTER -->
+<div class="footer">
+    {% if site.params.footer.social.enabled %}
+        <ul class="social">
+            {% for method in site.params.footer.social.social_methods %}
+                <li>
+                    <a href="{{ method.link }}">
+                        <i class="{{ method.icon }}"></i>
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    {% elif site.data.social.links %}
+        <ul class="social">
+            {% for method in site.data.social.links %}
+                <li>
+                    <a href="{{ method.url }}">
+                        <i class="{{ method.icon }}"></i>
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    <div class="bottom">
+        {% if site.params.footer.bottom.blurb.enabled %}
+            <div class="blurb">
+                {% if site.params.footer.bottom.blurb.displayBlurbImg %}
+                    <img class="blurb-img" src="{% if site.params.footer.bottom.blurb.img %}{{ site.params.footer.bottom.blurb.img | relative_url }}{% else %}{{ site.author.avatar | relative_url }}{% endif %}" alt="" />
+                {% endif %}
+                <div class="blurb-content">
+                    {% if site.params.footer.bottom.blurb.description.heading %}
+                        <h2 class="inversed">{{ site.params.footer.bottom.blurb.description.heading }}</h2>
+                    {% elif site.data.author.name %}
+                        <h2 class="inversed">{{ site.data.author.name }}</h2>
+                    {% endif %}
+                    {% if site.params.footer.bottom.blurb.description.subheading %}
+                        <h3>{{ site.params.footer.bottom.blurb.description.subheading }}</h3>
+                    {% elif site.data.author.email %}
+                        <h3>{{ site.data.author.email }}</h3>
+                    {% endif %}
+                    {{ site.params.footer.bottom.blurb.description.content | markdownify }}
+                </div>
+            </div>
+        {% endif %}
+
+        {% if site.params.footer.bottom.copyright.enabled %}
+            <span class="copyright">{{ site.params.footer.bottom.copyright.text | safe }}</span>
+        {% endif %}
+    </div>
+</div>

@@ -1,0 +1,47 @@
+<!-- HERO -->
+<div class="hero hero-higher hero-alt">
+
+    {% if page.hero.img or site.data.author.avatar or page.hero.background_img.display %}
+        {% if not page.hero.background_img.display %}
+            {% if page.hero.displayHeaderImg %}
+                <hr />
+            {% endif %}
+        {% endif %}
+        {% if page.hero.background_img.display %}
+            <div class="bg-img-banner">
+                <div class="overlay has-img"></div>
+                <img class="hero-bg-img" src="{{ page.hero.background_img.path | relative_url }}" alt="" />
+            </div>
+        {% endif %}
+        {% if page.hero.displayHeaderImg %}
+            {% if page.hero.img or site.data.author.avatar %}
+                <div class="hero-img img-smaller">
+                    <img src="{% if page.hero.img %}{{ page.hero.img | relative_url }}{% else %}{{ site.data.author.avatar | relative_url }}{% endif %}" alt="" />
+                </div>
+            {% endif %}
+        {% endif %}
+    {% endif %}
+
+    {% if page.template !== "basic" and page.template !== "contact" %}
+        <div class="generic-hero-description">
+            {% if page.hero.display_date %}
+                <h3 class="hero-date{% if page.hero.background_img.display %} inversed{% endif %}">{{ page.date | date_format("%b %d %Y") }}</h3>
+            {% endif %}
+            <h1 class="hero-heading{% if page.hero.background_img.display %} inversed{% endif %}">{{ page.title }}</h1>
+            {% if page.subtitle %}
+                <h2 class="hero-subheading{% if page.hero.background_img.display %} inversed{% endif %}">{{ page.subtitle }}</h2>
+            {% endif %}
+        </div>
+    {% endif %}
+
+    {% if page.hero.display_tags %}
+        <ul class="tags">
+            {% for tag in page.tagsList %}
+                <li class="tag{% if page.hero.background_img.display %} inversed{% endif %}">{{ tag.name }}</li>
+                {% if not loop.last %}
+                    <li class="delim{% if page.hero.background_img.display %} inversed{% endif %}"></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    {% endif %}
+</div>
