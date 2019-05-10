@@ -1,7 +1,7 @@
 uploadDir: "images"
 sourceMapping:
   - source:
-      value: true
+      value: false
     target:
       file: "content/posts/*.md"
       fieldPath: "dp"
