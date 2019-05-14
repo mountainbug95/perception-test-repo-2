@@ -1,5 +1,5 @@
 <!-- POSTS -->
-{% set pIndex = 0 %}
+{% set colors = cycler("color1", "color2", "color3", "color4", "color5", "color6", "color7") %}
 <div  class="posts">
     <ul class="posts-list{% if include_dict.section.postsLayout == "grid" %} pl-grid{% endif %}">
         {% for post in include_dict.site.root.folders.posts.pages | where("dp", true) | sort(true, true, "date") %}
@@ -37,7 +37,7 @@
                         </li>
                     {% elif include_dict.section.postsLayout == "grid" %}
                         <li class="post post-grid">
-                            <div{% if not post.display_thumbnail %} id="noBG{{ pIndex }}"{% set pIndex = pIndex + 1 %}{% endif %} class="post-header post-header-grid{% if  post.thumb_img_path and post.display_thumbnail %} has-img{% endif %}">
+                            <div{% if not post.display_thumbnail %} id="{{ colors.next() }}"{% endif %} class="post-header post-header-grid{% if  post.thumb_img_path and post.display_thumbnail %} has-img{% endif %}">
                                 <h3 class="post-date-alt">{{ post.date | date_format("%b %d %Y") }}</h3>
                                 {% if  post.thumb_img_path and post.display_thumbnail %}
                                     <img class="post-img" src="{{ post.thumb_img_path | relative_url }}" alt="" />
@@ -68,13 +68,6 @@
                     {% endif %}
                 {% endif %}
             {% endif %}
-
-            {% if loop.last %}
-                <script>
-                    window.noBGIndex = {{ pIndex }} - 1;
-                </script>
-            {% endif %}
-
         {% endfor %}
     </ul>
 </div>
