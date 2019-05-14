@@ -11,6 +11,16 @@ sourceMapping:
       file: "config.yml"
       fieldPath: "params.footer.bottom.blurb.heading"
   - source:
+      fieldPath: "author.name"
+    target:
+      file: "content/*.md"
+      fieldPath: "hero.subdescription.heading"
+  - source:
+      fieldPath: "author.name"
+    target:
+      file: "content/posts/*.md"
+      fieldPath: "hero.subdescription.heading"
+  - source:
       fieldPath: "author.email"
     target:
       file: "data/author.json"
@@ -21,6 +31,16 @@ sourceMapping:
       file: "config.yml"
       fieldPath: "params.footer.bottom.blurb.subheading"
   - source:
+      fieldPath: "author.email"
+    target:
+      file: "content/*.md"
+      fieldPath: "hero.subdescription.subheading"
+  - source:
+      fieldPath: "author.email"
+    target:
+      file: "content/posts/*.md"
+      fieldPath: "hero.subdescription.subheading"
+  - source:
       fieldPath: "author.avatar"
     target:
       file: "data/author.json"
@@ -30,6 +50,26 @@ sourceMapping:
     target:
       file: "config.yml"
       fieldPath: "params.footer.bottom.blurb.img"
+  - source:
+      fieldPath: "author.avatar"
+    target:
+      file: "content/*.md"
+      fieldPath: "hero.img"
+  - source:
+      fieldPath: "author.avatar"
+    target:
+      file: "content/posts/*.md"
+      fieldPath: "hero.img"
+  - source:
+      fieldPath: "social.links"
+    target:
+      file: "data/social.json"
+      fieldPath: "links"
+  - source:
+      fieldPath: "social.links"
+    target:
+      file: "config.yml"
+      fieldPath: "params.footer.social.social_methods"
   - source:
       value: true
     target:
@@ -402,6 +442,13 @@ models:
        name: title
        label: Section Title
        required: true
+     - type: enum
+       name: postsLayout
+       label: Post Section Layout
+       options: ["grid-with-highlight", "grid", "list"]
+       required: true
+       default: "grid-with-highlight"
+       description: The layout used to display the site posts in the posts section.
      - type: string
        name: component
        label: Component

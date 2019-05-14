@@ -1,9 +1,10 @@
 <!-- POSTS -->
+{% set pIndex = 0 %}
 <div  class="posts">
-    <ul class="posts-list">
+    <ul class="posts-list{% if include_dict.section.postsLayout == "grid" %} pl-grid{% endif %}">
         {% for post in include_dict.site.root.folders.posts.pages | where("dp", true) | sort(true, true, "date") %}
             {% if post.dp == true %}
-                {% if loop.first %}
+                {% if loop.first and include_dict.section.postsLayout == "grid-with-highlight" %}
                     <li class="first-post">
                         <div class="first-post-content{% if post.thumb_img_path and post.display_thumbnail %} has-img{% endif %}">
                             <h3 class="post-date">{{ post.date | date_format("%b %d %Y") }}</h3>
@@ -19,22 +20,61 @@
                         </div>
                     </li>
                 {% else %}
-                    <li class="post">
-                        <div class="post-header{% if  post.thumb_img_path and post.display_thumbnail %} has-img{% endif %}">
-                            <h3 class="post-date">{{ post.date | date_format("%b %d %Y") }}</h3>
-                            {% if  post.thumb_img_path and post.display_thumbnail %}
-                                <img class="post-img" src="{{ post.thumb_img_path | relative_url }}" alt="" />
-                            {% endif %}
-                            <a href="{{ post.url | relative_url }}"><h1 class="post-heading{% if post.thumb_img_path and post.display_thumbnail %} inversed short-width{% endif %}">{{ post.title }}</h1></a>
-                        </div>
-                        {% if post.excerpt %}
-                            <div class="excerpt">
-                                {{ post.excerpt | nl2br | safe }}<span><a href="{{ post.url | relative_url }}">Read more →</a></span>
+                    {% if include_dict.section.postsLayout == "grid-with-highlight" %}
+                        <li class="post">
+                            <div class="post-header{% if  post.thumb_img_path and post.display_thumbnail %} has-img{% endif %}">
+                                <h3 class="post-date">{{ post.date | date_format("%b %d %Y") }}</h3>
+                                {% if  post.thumb_img_path and post.display_thumbnail %}
+                                    <img class="post-img" src="{{ post.thumb_img_path | relative_url }}" alt="" />
+                                {% endif %}
+                                <a href="{{ post.url | relative_url }}"><h1 class="post-heading{% if post.thumb_img_path and post.display_thumbnail %} inversed short-width{% endif %}">{{ post.title }}</h1></a>
                             </div>
-                        {% endif %}
-                    </li>
+                            {% if post.excerpt %}
+                                <div class="excerpt">
+                                    {{ post.excerpt | nl2br | safe }}<span><a href="{{ post.url | relative_url }}">Read more →</a></span>
+                                </div>
+                            {% endif %}
+                        </li>
+                    {% elif include_dict.section.postsLayout == "grid" %}
+                        <li class="post post-grid">
+                            <div{% if not post.display_thumbnail %} id="noBG{{ pIndex }}"{% set pIndex = pIndex + 1 %}{% endif %} class="post-header post-header-grid{% if  post.thumb_img_path and post.display_thumbnail %} has-img{% endif %}">
+                                <h3 class="post-date-alt">{{ post.date | date_format("%b %d %Y") }}</h3>
+                                {% if  post.thumb_img_path and post.display_thumbnail %}
+                                    <img class="post-img" src="{{ post.thumb_img_path | relative_url }}" alt="" />
+                                {% endif %}
+                                <a href="{{ post.url | relative_url }}"><h1 class="post-heading-alt{% if post.thumb_img_path and post.display_thumbnail %} inversed{% endif %}">{{ post.title }}</h1></a>
+                            </div>
+                            {% if post.excerpt %}
+                                <div class="excerpt">
+                                    {{ post.excerpt | nl2br | safe }}<span><a href="{{ post.url | relative_url }}">Read more →</a></span>
+                                </div>
+                            {% endif %}
+                        </li>
+                    {% else %}
+                        <li class="post post-list">
+                            {% if  post.thumb_img_path and post.display_thumbnail %}
+                                <img class="post-img-alt" src="{{ post.thumb_img_path | relative_url }}" alt="" />
+                            {% endif %}
+                            <div class="post-header post-header-list">
+                                <h3 class="post-date-no-line">{{ post.date | date_format("%b %d %Y") }}</h3>
+                                <a href="{{ post.url | relative_url }}"><h1 class="post-heading post-heading-list">{{ post.title }}</h1></a>
+                            </div>
+                            {% if post.excerpt %}
+                                <div class="excerpt excerpt-alt">
+                                    {{ post.excerpt | nl2br | safe }}<span><a href="{{ post.url | relative_url }}">Read more →</a></span>
+                                </div>
+                            {% endif %}
+                        </li>
+                    {% endif %}
                 {% endif %}
             {% endif %}
+
+            {% if loop.last %}
+                <script>
+                    window.noBGIndex = {{ pIndex }} - 1;
+                </script>
+            {% endif %}
+
         {% endfor %}
     </ul>
 </div>

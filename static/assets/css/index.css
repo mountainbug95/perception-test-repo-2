@@ -23,12 +23,34 @@ a{
     margin: 0;
 }
 
+pl-grid{
+    align-items: stretch;
+}
+
 .post-date{
     font-family: 'chivo-regular';
     font-size: 13px;
     color: #aaaaaa;
     line-height: 30px;
     border-bottom: 1px solid;
+}
+
+.post-date-no-line{
+    font-family: 'chivo-regular';
+    font-size: 13px;
+    color: #aaaaaa;
+    line-height: 30px;
+    margin-bottom: 5px !important;
+}
+
+.post-date-alt{
+    font-family: 'chivo-regular';
+    font-size: 12px;
+    color: rgba(255,255,255,0.70);
+    letter-spacing: 0;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 41px;
 }
 
 .first-post{
@@ -73,6 +95,16 @@ a{
     position: relative;
 }
 
+.post-grid{
+    flex: 1 0 33% !important;
+}
+
+.post-list{
+    overflow: hidden;
+    flex: 1 0 100% !important;
+    margin-bottom: 47px;
+}
+
 .post-header{
     box-sizing: border-box;
     overflow: hidden;
@@ -83,10 +115,37 @@ a{
     position: relative;
 }
 
+.post-header-list{
+    max-width: 60%;
+}
+
+.post-header-grid{
+    min-height: 190px;
+    height:  50%;
+}
+
 .post-heading{
     font-family: 'robotoslab-bold';
     font-size: 22px;
     width: 100%;
+}
+
+.post-heading-list{
+    font-family: 'robotoslab-bold';
+    font-size: 22px;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.post-heading-alt{
+    font-family: 'robotoslab-bold';
+    color: white;
+    width: 100%;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    text-align: center;
+    line-height: 28px;
 }
 
 .short-width{
@@ -109,12 +168,32 @@ a{
     z-index: -1;
 }
 
+.post-img-alt{
+    display: inline;
+    float: right;
+    word-wrap: normal;
+    width: 30%;
+    position: absolute;
+    right: 0;
+    bottom: 8px;
+    top: 55px;
+    object-fit: cover;
+    min-height: 100%;
+}
+
 .excerpt{
     font-family: 'chivo-regular';
     font-size: 14px;
     line-height: 30px;
     padding: 10px;
     margin-bottom: 70px;
+}
+
+.excerpt-alt{
+    max-width: 67%;
+    margin-bottom: 0 !important;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .excerpt a{
@@ -164,6 +243,27 @@ a{
     .post{
         min-width: 50%;
         display: inline-block;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .excerpt-alt{
+        max-width: 100%;
+    }
+
+    .post-img-alt{
+        display: block;
+        max-height: 200px;
+        float:none;
+        position: relative;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        min-width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 5px;
     }
 }
 
