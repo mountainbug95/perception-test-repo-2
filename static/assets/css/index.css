@@ -194,6 +194,8 @@ pl-grid{
     margin-bottom: 0 !important;
     padding-top: 0;
     padding-bottom: 0;
+    min-height: 100px;
+    position: relative;
 }
 
 .excerpt a{
