@@ -1,6 +1,6 @@
 document.getElementById("menu-button").addEventListener("click", displayMenu);
 document.getElementById("cm").addEventListener("click", hideMenu);
-document.onload = assignColor();
+document.observe("dom:loaded", assignColor());
 
 var noBGIndex = -1;
 
