@@ -17,14 +17,15 @@
     align-items: center;
     margin-left: 6px;
     margin-right: 6px;
-    width: 30px;
-    height: 30px;
+    width: 36px;
+    height: 36px;
     border-radius: 100%;
     background-color: #222222;
 }
 
 .social li i{
     color: white;
+    margin-top: 3px;
 }
 
 .bottom{
@@ -68,7 +69,7 @@
 
 .blurb-content h3{
     font-family: 'chivo-regular';
-    color: #888888;
+    color: rgba(255,255,255,0.70);
     line-height: 20px;
 }
 
@@ -79,7 +80,7 @@
     padding-top: 70px;
     padding-bottom: 70px;
     font-size: 14px;
-    color: #aeaeae;
+    color: #888888;
 }
 
 @media screen and (max-width: 800px){

@@ -75,7 +75,7 @@ h3{
 
 .content{
     font-family: 'chivo-regular';
-    width: 60%;
+    width: 780px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 80px;
@@ -86,10 +86,12 @@ h3{
     font-size: 16px;
     line-height: 30px;
     margin-top: 32px;
+    letter-spacing: 0;
+    font-weight: 100;
 }
 
 .content a{
-    color: #56baff;
+    color: #009EFF;
 }
 
 .content h2{
@@ -111,6 +113,7 @@ h3{
     font-family: 'chivo-regular';
     display: block;
     text-align: center;
+    margin-top: -10px;
     margin-left: auto;
     margin-right: auto;
     font-size: 12px;
@@ -146,7 +149,8 @@ h3{
 }
 
 .ref-source{
-    font-family: multiple;
+    font-family: 'chivo-regular';
+    font-style: italic;
     font-size: 16px;
     letter-spacing: -0.5px;
     line-height: 30px;
@@ -155,6 +159,7 @@ h3{
 .lead-letter{
     display: inline-block;
     font-family: 'roboto-slab';
+    font-weight: bold;
     font-size: 40px;
 }
 
@@ -173,7 +178,7 @@ h3{
 
 .quote-box hr{
     position: absolute;
-    top: 3px;
+    top: 10px;
     left: 30%;
     right: 30%;
     z-index: -1;
@@ -227,7 +232,7 @@ h3{
     align-items:  center;
     font-size: 13px;
     border-top: 1px solid;
-    border-color: #aeaeae;
+    border-color: #D8D8D8;
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
@@ -241,10 +246,10 @@ h3{
     box-sizing: border-box;
     text-align: center;
     display: none;
-    width: 4vw;
-    height: 4vw;
-    min-width: 30px;
-    min-height: 30px;
+    width: 3.5vw;
+    height: 3.5vw;
+    min-width: 45px;
+    min-height: 45px;
     padding: 1px;
     border: none;
     z-index: 10;
@@ -356,8 +361,7 @@ body{
     max-width: 98vw;
     display: flex;
     justify-content: center;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 #___gatsby{
@@ -375,27 +379,53 @@ body{
     margin-right: auto;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1200px){
     .content{
         min-width: 100%;
     }
-}
 
-@media screen and (max-width: 1200px){
     #menu-button{
         display: block;
     }
+
     .nav-items{
         display: none;
+    }
+    .content{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .quote-box img{
+        max-width: 30px !important;
+        margin-left: 26.6vw !important;
+    }
+
+    .content img{
+        width: 100vw;
+        max-width: 200%;
+        margin-left: -11vw;
     }
 }
 
 @media screen and (max-width: 550px){
+    .quote-box img{
+        margin-left: 24.5vw !important;
+    }
+
     .menu-items{
         width: 80%;
     }
 
     .menu-link a{
         font-size: 25px;
+    }
+    .content{
+        width: 83%;
+    }
+
+    .blurb-content{
+        min-width: 83%;
     }
 }

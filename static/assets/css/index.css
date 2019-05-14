@@ -86,6 +86,10 @@ a{
 .post-heading{
     font-family: 'robotoslab-bold';
     font-size: 22px;
+    width: 100%;
+}
+
+.short-width{
     max-width: 60%;
 }
 
@@ -106,7 +110,7 @@ a{
 }
 
 .excerpt{
-    font-family: 'chivo-regukar';
+    font-family: 'chivo-regular';
     font-size: 14px;
     line-height: 30px;
     padding: 10px;
@@ -116,7 +120,7 @@ a{
 .excerpt a{
     font-family: 'chivo-reguklar';
     text-decoration: none;
-    color: #5db9ff;
+    color: #009EFF;
     font-size: 14px;
     margin-left: 5px;
 }
@@ -153,7 +157,7 @@ a{
     }
 
     .first-post{
-        min-width: 50%;
+        min-width: 100%;
         display: inline-block;
     }
 

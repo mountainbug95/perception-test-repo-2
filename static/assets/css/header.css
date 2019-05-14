@@ -22,11 +22,11 @@
 }
 
 .nav-items a{
+    font-family: 'chivo-regular';
+    font-size: 14px;
+    color: #222222;
     display: inline-block;
     text-decoration: none;
-    font font-family: 'chivo-regular';
-    color: #222222;
-    font-size: 14px;
 }
 
 @media screen and (max-width: 800px){

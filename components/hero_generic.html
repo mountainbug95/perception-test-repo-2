@@ -15,7 +15,7 @@
         {% endif %}
         {% if page.hero.displayHeaderImg %}
             {% if page.hero.img or site.data.author.avatar %}
-                <div class="hero-img img-smaller">
+                <div class="hero-img img-smaller{% if not page.hero.background_img.display %} img-no-bg{% endif %}">
                     <img src="{% if page.hero.img %}{{ page.hero.img | relative_url }}{% else %}{{ site.data.author.avatar | relative_url }}{% endif %}" alt="" />
                 </div>
             {% endif %}
@@ -27,7 +27,7 @@
             {% if page.hero.display_date %}
                 <h3 class="hero-date{% if page.hero.background_img.display %} inversed{% endif %}">{{ page.date | date_format("%b %d %Y") }}</h3>
             {% endif %}
-            <h1 class="hero-heading{% if page.hero.background_img.display %} inversed{% endif %}">{{ page.title }}</h1>
+            <h1 class="hero-heading{% if page.hero.background_img.display %} inversed shadowed{% endif %}">{{ page.title }}</h1>
             {% if page.subtitle %}
                 <h2 class="hero-subheading{% if page.hero.background_img.display %} inversed{% endif %}">{{ page.subtitle }}</h2>
             {% endif %}

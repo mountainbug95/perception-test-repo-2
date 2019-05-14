@@ -15,4 +15,7 @@
 {% if page.template == "contact" %}
     <link rel="stylesheet" href="{{ 'assets/css/form.css' | relative_url }}" />
 {% endif %}
+{% if page.template == "post" or page.template == "page" %}
+    <link rel="stylesheet" href="{{ 'assets/css/generic.css' | relative_url }}" />
+{% endif %}
 <link rel="stylesheet" href="{{ 'assets/css/main.css' | relative_url }}" />

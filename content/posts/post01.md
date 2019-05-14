@@ -47,8 +47,7 @@ n my effort to be more minimalist, I have adopted a “one in, one out” rule. 
 
 <span class="ref-source">— Nicolle Osequeda, licensed psychotherapist and member of the [Financial Therapy Association](#)</span>
 
-![content image alt text](/images/postimage01.png)
-
+![content image alt text](images/postimage01.png)
 <span class="img-src">Credit: Pan Xunbin/Moment/Getty</span>
 
 The Back Door — There are garbage shoots in many buildings. Can we repurpose them as package elevators. There is also probably some room behind the walls. Can we build new ones? Maybe even smart ones that take packages one way and garbage another direction but are still sanitary? Can we create closets and refrigerators with back doors into the guts of the building? Could your laundry and amazon order go straight up a retrofitted garbage shoot straight into your fridge through a trapdoor in the wall and a backdoor into your refrigerator? I wonder what this would do to customer expectations? Raining outside? let me order an umbrella from the basement mini-robotic supermarket! I am sure you can think of other last minute items you may want to order to the fridge or bedroom.

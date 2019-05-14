@@ -26,7 +26,7 @@
         {% if site.params.footer.bottom.blurb.enabled %}
             <div class="blurb">
                 {% if site.params.footer.bottom.blurb.displayBlurbImg %}
-                    <img class="blurb-img" src="{% if not site.params.footer.bottom.blurb.img == null %}{{ site.params.footer.bottom.blurb.img | relative_url }}{% else %}{{ site.author.avatar | relative_url }}{% endif %}" alt="" />
+                    <img class="blurb-img" src="{% if site.params.footer.bottom.blurb.img %}{{ site.params.footer.bottom.blurb.img | relative_url }}{% else %}{{ site.author.avatar | relative_url }}{% endif %}" alt="" />
                 {% endif %}
                 <div class="blurb-content">
                     {% if site.params.footer.bottom.blurb.description.heading %}
