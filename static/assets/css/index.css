@@ -176,7 +176,7 @@ pl-grid{
     position: absolute;
     right: 0;
     bottom: 8px;
-    top: 55px;
+    top: 45px;
     object-fit: cover;
     min-height: 100%;
 }
