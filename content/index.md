@@ -8,11 +8,11 @@ hero:
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
   subdescription:
     enabled: true
-    heading: Anna Goldfarb
+    heading: Jane Doe
     subheading: writer & Journalist
 sections:
   - title: Posts
-    postsLayout: "list"
+    postsLayout: "grid-with-highlight"
     component: "posts.html"
     type: posts
 menus:

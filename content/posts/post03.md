@@ -1,6 +1,6 @@
 ---
 title: Ut et voluptates repudiandae sint et molestiae
-subtitle: Tips for getting the urge to buy under control
+subtitle: Wisi definiebas theophrastus et vel sea ornatus
 template: post
 display_thumbnail: false
 date: 2018-03-13
@@ -21,35 +21,35 @@ tagsList:
 dp: true
 ---
 
-<span class="lead-letter">W</span>e knew things were spiraling out of control when I had to create a spreadsheet to keep track of all the packages arriving at my doorstep.
+<span class="lead-letter">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-I’d fallen prey to a few online sales over the holidays. I’ve usually been able to keep my mindless consumerism in check, so I wasn’t worried by each new urge to hit “buy” — I just did it. And then, a few weeks later, I found myself tallying up hundreds of dollars in purchases and fighting off a mounting sense of shame. The kicker? Most of those purchases are still sitting unused in my closet.
+Est error quando ne, an vis sale inimicus. Mea explicari philosophia te, has cu solum adipiscing, tota aeterno ne nam. Cu quo civibus deleniti constituto. Et etiam dicam est, ne vide signiferumque duo.Dolor semper facilisi ei mei. Vitae viderer id mei, ut alienum splendide reprimique vel. Brute fabulas vel no, eos rebum dicam no, et quem impetus hendrerit sit. Ne libris dolores qui, ea has elitr everti legendos, vix democritum suscipiantur ei. Id qui esse soluta cotidieque, vix omittam cotidieque id.
 
-At its most extreme, an online shopping habit can take the form of compulsive buying disorder, or CBD — a behavioral addiction, like gambling or overeating, that affects an estimated 5.8 percent of Americans, according to a 2007 study. People with CBD (also known as oniomania, an obsessive or uncontrollable urge to buy things) report having a preoccupation with shopping, pre-purchase tension or anxiety, and a sense of relief following the purchase. But even for those who haven’t reached the level of pathology, the lure of online shopping can be hard to resist, especially because it’s so easy: Set your credit card info to auto-populate, and you don’t even have to get up from the couch.
+Ne vim equidem neglegentur. Nam posidonium necessitatibus te, ea elitr laudem has. Sit summo oporteat concludaturque ad, usu facilis periculis maluisset at. Per utroque vituperatoribus id. Ea dicunt molestie per, nihil utamur eripuit at mei. Dictas contentiones conclusionemque pri cu, pri malis repudiare assentior ex. Usu at ipsum ceteros. Vix natum ornatus rationibus te, ne animal assentior vel, intellegat dissentias duo eu. Mel ei appetere dignissim mnesarchum, cu mei cibo mundi. Denique percipitur omittantur his ei, iisque definiebas reprimique no nam. Nihil legendos repudiandae id eos. At per admodum detracto oporteat, id omnes scaevola nec. Aeterno electram deterruisset per ne, at vis bonorum reformidans. Vel at audiam debitis, eripuit tacimates democritum qui id.
 
 <div class="quote-box">
     <hr />
     <img src="/images/quote.svg" alt="" />
     <div class="quote-box-text">
-        There will always be another sale and another cool product around the corner.”
+        Cu eam reque oblique, his facer salutatus ex. Mei at putent elaboraret.”
     </div>
 </div>
 
-It’s an expensive habit, but not an unbreakable one. Below, financial therapists and money experts offer their advice on how to reel in your online spending and regain control of your finances. It’s an expensive habit, but not an unbreakable one. Below, financial therapists and money experts offer their advice on how to reel in your online spending and regain control of your finances.
+Eius fabulas interesset at mei, feugait vituperatoribus ea qui. Te ius sensibus quaerendum, sed labore latine consectetuer ea. Cu est unum accusam signiferumque, pro possim constituto inciderint in. Id quando consul contentiones per, his ex porro maiorum senserit, est ut mentitum percipit quaestio. Est at cetero prodesset.
 
-## Reacquaint yourself with what you already have.
+## Usu timeam invenire persequeris ex.
 
-<span class="highlight">Chances are you have a closet of clothes you’ve barely worn, and probably lots of items that look like each other. Take the time to clear out your wardrobe and look around your home for items you don’t need. Also, return anything that still has the tags.</span>
+<span class="highlight">Nam id sumo solum menandri, erat probatus corrumpit duo at. Usu timeam invenire persequeris ex. Esse affert invenire ad pri. Mea harum voluptaria ut, semper causae mea ei. No nostrud laboramus delicatissimi sit, te sit viris scripta. Cu assum primis has.</span>
 
-<span class="ref-source">— Andrea Woroch, personal-finance writer and speaker</span>
+<span class="ref-source">— Bob Smith, public speaker</span>
 
-n my effort to be more minimalist, I have adopted a “one in, one out” rule. This helps you become more aware of what you have and what you need, and when you’re just accumulating stuff. Think about this before buying something new and be prepared to donate or gift the item you’re replacing.
+Cu percipit adipiscing eum, ea pri putent convenire adipiscing. Id est tota error iriure. An propriae epicurei nam, ei bonorum feugait blandit nec. Vidit invenire his et, oblique offendit persecuti mea ut, ius ut graece hendrerit. Ad mea epicuri iracundia. Est an adhuc voluptatum, harum vivendum iudicabit cu pro.
 
-<span class="ref-source">— Nicolle Osequeda, licensed psychotherapist and member of the [Financial Therapy Association](#)</span>
+<span class="ref-source">— Clark Takako, member of the [Ut Graece Association](#)</span>
 
 ![content image alt text](images/postimage01.png)
 <span class="img-src">Credit: Pan Xunbin/Moment/Getty</span>
 
-The Back Door — There are garbage shoots in many buildings. Can we repurpose them as package elevators. There is also probably some room behind the walls. Can we build new ones? Maybe even smart ones that take packages one way and garbage another direction but are still sanitary? Can we create closets and refrigerators with back doors into the guts of the building? Could your laundry and amazon order go straight up a retrofitted garbage shoot straight into your fridge through a trapdoor in the wall and a backdoor into your refrigerator? I wonder what this would do to customer expectations? Raining outside? let me order an umbrella from the basement mini-robotic supermarket! I am sure you can think of other last minute items you may want to order to the fridge or bedroom.
+Summo ludus vix te, has id veritus facilisi vituperatoribus, has et offendit luptatum perpetua. Cu mei atqui oratio audire. Cum et summo discere, sit ad sumo vidit contentiones. At augue persequeris eos, mei vero voluptua suscipiantur no. Ponderum ocurreret et mel. Denique mandamus suscipiantur quo eu, te harum molestiae has. Dicta constituto an nec. In qui hinc harum accommodare, enim petentium sed et. Te putant minimum scripserit pri. Sint paulo deseruisse ea per, ea pri inimicus prodesset abhorreant, dicit dicam mea et. Sumo euismod mediocrem mea ei. Id usu timeam pericula, mea odio moderatius at. Ad elitr ignota vis, et pro viris timeam, ex sed natum appareat lobortis. Est cu congue neglegentur, vel vivendo hendrerit te. Veritus assueverit per in, eu vix vitae placerat, te elit vocibus intellegat sea. Oporteat reprimique mel ut, et sea eius salutandi maluisset, odio perfecto sapientem no sed. Eu vidit oblique dolores eos.
 
-So where do you find these mythical VC firms? Most of them are based in the biggest tech hubs in the nation, and it’s rare to find a VC firm in one geographic region of the country investing in a startup company located in another part of the country. Thus, it’s no surprise that California (home to sunny weather and even sunnier Silicon Valley startups) accounts for 50–60 percent of all VC deal volume in any given year, while New York City and Massachusetts (home to all the whiz kid startups in Boston and Cambridge) account for another 20–25 percent of all VC deal volume.That leaves a sliver of VC deal volume in places like Texas, Illinois, Washington State, and Colorado. So here’s the reality — unless you’re based in a huge tech hub, the chances of lining up a big chunk of seed or Series A funding are going to be extremely low. You might be So where do you find these mythical VC firms? Most of them are based in the biggest tech hubs in the nation, and it’s rare to find a VC firm in one geographic region of the country investing in a startup company located in another part of the country. Thus, it’s no surprise that California (home to sunny weather and even sunnier Silicon Valley startups) accounts for 50–60 percent of all VC deal volume in any given year, while New York City and Massachusetts (home to all the whiz kid startups in Boston and Cambridge) account for another 20–25 percent of all VC deal volume. That leaves a sliver of VC deal volume in places like Texas, Illinois, Washington State, and Colorado. So here’s the reality — unless you’re based in a huge tech hub, the chances of lining up a big chunk of seed or Series A funding are going to be extremely low. You might be better off looking for additional angel investing money, or taking money from a local business incubator.
+Quas platonem deseruisse in est, qui ea quaeque dissentiet. Debet audiam intellegebat est eu. Integre sadipscing vim cu, his no scripta perpetua inciderint. Te nonumes apeirian evertitur cum, mel id augue altera. Vix ludus everti ex, ne case eius vim. Ad justo signiferumque vix, appetere ocurreret an duo, eu essent praesent intellegat vel. Cum dicunt commodo oporteat an, alia efficiendi ex vis. Qui ut omittantur vituperatoribus. Ad quando iuvaret diceret mea, probatus rationibus cu ius. Ad cum decore epicuri, ex congue perfecto voluptatibus sed. Has suas harum ex. Id sit suas cibo disputationi. Ut duo insolens evertitur, eu sit vero appellantur, ut nec solet oporteat. Ne alienum copiosae intellegebat per, vis nonumy verear at. Ei sea aperiri ocurreret, in veri natum scribentur mei. Ignota honestatis ea sea, nulla erant scripta vim ad. Graeco democritum nam ea. No impetus sanctus sea, an eos ipsum doming deserunt. Recteque electram et has, has eu falli tantas. Quis idque nostrud mea an. Summo dignissim torquatos vel an, electram imperdiet hendrerit mel ad. Eam et probo percipit. Id usu novum numquam saperet. Malis oratio tractatos usu eu, quot fugit pro ea. Sale impetus tacimates ne vel, eam erat reque docendi ad. Sea quidam nostrud delicata et, per quodsi aperiam ea. Mei magna aperiam suscipit at, no vel tation incorrupte reprimique, nam veri graeco feugait ex. Ne dolor accusamus sit, cum eu summo dolor neglegentur, has ut eirmod scripserit. Ad pro aliquid indoctum erroribus, quo aliquid dissentias mediocritatem ei. Aliquid lobortis contentiones te has, accumsan erroribus est an, cu tantas delenit sea. Solum populo discere pro ex, eos ne suavitate interesset deterruisset.
