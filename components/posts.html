@@ -37,7 +37,7 @@
                         </li>
                     {% elif include_dict.section.postsLayout == "grid" %}
                         <li class="post post-grid">
-                            <div class="post-header post-header-grid {{ colors.next() }}{% if  post.thumb_img_path and post.display_thumbnail %} has-img{% endif %}">
+                            <div class="post-header post-header-grid{% if not post.display_thumbnail %} color4{% endif %}{% if  post.thumb_img_path and post.display_thumbnail %} has-img{% endif %}">
                                 <h3 class="post-date-alt">{{ post.date | date_format("%b %d %Y") }}</h3>
                                 {% if  post.thumb_img_path and post.display_thumbnail %}
                                     <img class="post-img" src="{{ post.thumb_img_path | relative_url }}" alt="" />

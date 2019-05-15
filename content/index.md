@@ -12,7 +12,7 @@ hero:
     subheading: writer & Journalist
 sections:
   - title: Posts
-    postsLayout: "grid"
+    postsLayout: "list"
     component: "posts.html"
     type: posts
 menus:
